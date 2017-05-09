@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */; };
+		C76D92261EC1FEBA00F354C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76D92241EC1FEBA00F354C2 /* Main.storyboard */; };
+		C76D92281EC1FEBA00F354C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76D92271EC1FEBA00F354C2 /* Assets.xcassets */; };
+		C76D922B1EC1FEBA00F354C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76D92291EC1FEBA00F354C2 /* LaunchScreen.storyboard */; };
+		C76D92391EC1FED900F354C2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D92341EC1FED900F354C2 /* StringExtension.swift */; };
+		C76D923A1EC1FED900F354C2 /* UIExtesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D92351EC1FED900F354C2 /* UIExtesion.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C76D921B1EC1FEBA00F354C2 /* Music-Umbala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music-Umbala.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C76D92251EC1FEBA00F354C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C76D92271EC1FEBA00F354C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		C76D922A1EC1FEBA00F354C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C76D922C1EC1FEBA00F354C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76D92341EC1FED900F354C2 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C76D92351EC1FED900F354C2 /* UIExtesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtesion.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C76D92181EC1FEBA00F354C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C76D92121EC1FEBA00F354C2 = {
+			isa = PBXGroup;
+			children = (
+				C76D921D1EC1FEBA00F354C2 /* Music-Umbala */,
+				C76D921C1EC1FEBA00F354C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C76D921C1EC1FEBA00F354C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C76D921B1EC1FEBA00F354C2 /* Music-Umbala.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C76D921D1EC1FEBA00F354C2 /* Music-Umbala */ = {
+			isa = PBXGroup;
+			children = (
+				C76D92321EC1FED900F354C2 /* Controllers */,
+				C76D92331EC1FED900F354C2 /* Helpers */,
+				C76D92361EC1FED900F354C2 /* Models */,
+				C76D92371EC1FED900F354C2 /* Resources */,
+				C76D92381EC1FED900F354C2 /* Views */,
+				C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */,
+				C76D922C1EC1FEBA00F354C2 /* Info.plist */,
+			);
+			path = "Music-Umbala";
+			sourceTree = "<group>";
+		};
+		C76D92321EC1FED900F354C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C76D92331EC1FED900F354C2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C76D92341EC1FED900F354C2 /* StringExtension.swift */,
+				C76D92351EC1FED900F354C2 /* UIExtesion.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C76D92361EC1FED900F354C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C76D92371EC1FED900F354C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C76D92271EC1FEBA00F354C2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C76D92381EC1FED900F354C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C76D92241EC1FEBA00F354C2 /* Main.storyboard */,
+				C76D92291EC1FEBA00F354C2 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C76D921A1EC1FEBA00F354C2 /* Music-Umbala */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C76D922F1EC1FEBA00F354C2 /* Build configuration list for PBXNativeTarget "Music-Umbala" */;
+			buildPhases = (
+				C76D92171EC1FEBA00F354C2 /* Sources */,
+				C76D92181EC1FEBA00F354C2 /* Frameworks */,
+				C76D92191EC1FEBA00F354C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Music-Umbala";
+			productName = "Music-Umbala";
+			productReference = C76D921B1EC1FEBA00F354C2 /* Music-Umbala.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C76D92131EC1FEBA00F354C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Nam Vo";
+				TargetAttributes = {
+					C76D921A1EC1FEBA00F354C2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C76D92161EC1FEBA00F354C2 /* Build configuration list for PBXProject "Music-Umbala" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C76D92121EC1FEBA00F354C2;
+			productRefGroup = C76D921C1EC1FEBA00F354C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C76D921A1EC1FEBA00F354C2 /* Music-Umbala */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C76D92191EC1FEBA00F354C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76D922B1EC1FEBA00F354C2 /* LaunchScreen.storyboard in Resources */,
+				C76D92281EC1FEBA00F354C2 /* Assets.xcassets in Resources */,
+				C76D92261EC1FEBA00F354C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C76D92171EC1FEBA00F354C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76D92391EC1FED900F354C2 /* StringExtension.swift in Sources */,
+				C76D923A1EC1FED900F354C2 /* UIExtesion.swift in Sources */,
+				C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C76D92241EC1FEBA00F354C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C76D92251EC1FEBA00F354C2 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C76D92291EC1FEBA00F354C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C76D922A1EC1FEBA00F354C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C76D922D1EC1FEBA00F354C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C76D922E1EC1FEBA00F354C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C76D92301EC1FEBA00F354C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Music-Umbala/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "namvh.Music-Umbala";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C76D92311EC1FEBA00F354C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Music-Umbala/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "namvh.Music-Umbala";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C76D92161EC1FEBA00F354C2 /* Build configuration list for PBXProject "Music-Umbala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76D922D1EC1FEBA00F354C2 /* Debug */,
+				C76D922E1EC1FEBA00F354C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C76D922F1EC1FEBA00F354C2 /* Build configuration list for PBXNativeTarget "Music-Umbala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76D92301EC1FEBA00F354C2 /* Debug */,
+				C76D92311EC1FEBA00F354C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C76D92131EC1FEBA00F354C2 /* Project object */;
+}
