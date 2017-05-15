@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D6E6E191EC95BE00033D045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E6E151EC95BE00033D045 /* LaunchScreen.storyboard */; };
+		3D6E6E1A1EC95BE00033D045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E6E171EC95BE00033D045 /* Main.storyboard */; };
+		3D6E6E251EC960530033D045 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E6E231EC960530033D045 /* StringExtension.swift */; };
+		3D6E6E261EC960530033D045 /* UIExtesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E6E241EC960530033D045 /* UIExtesion.swift */; };
+		3DA313161EC9BF1A0097674E /* Music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA313151EC9BF1A0097674E /* Music.storyboard */; };
+		3DA313181EC9BF640097674E /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA313171EC9BF640097674E /* Player.storyboard */; };
+		3DA3131F1EC9C01F0097674E /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3131E1EC9C01F0097674E /* More.storyboard */; };
+		3DCF72911EC95A5400B008C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF72901EC95A5400B008C0 /* Assets.xcassets */; };
 		C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */; };
-		C76D92261EC1FEBA00F354C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76D92241EC1FEBA00F354C2 /* Main.storyboard */; };
-		C76D92281EC1FEBA00F354C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76D92271EC1FEBA00F354C2 /* Assets.xcassets */; };
-		C76D922B1EC1FEBA00F354C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76D92291EC1FEBA00F354C2 /* LaunchScreen.storyboard */; };
-		C76D92391EC1FED900F354C2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D92341EC1FED900F354C2 /* StringExtension.swift */; };
-		C76D923A1EC1FED900F354C2 /* UIExtesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D92351EC1FED900F354C2 /* UIExtesion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D6E6E161EC95BE00033D045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Music-Umbala/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		3D6E6E181EC95BE00033D045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Music-Umbala/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		3D6E6E231EC960530033D045 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		3D6E6E241EC960530033D045 /* UIExtesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtesion.swift; sourceTree = "<group>"; };
+		3DA313151EC9BF1A0097674E /* Music.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Music.storyboard; sourceTree = "<group>"; };
+		3DA313171EC9BF640097674E /* Player.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
+		3DA3131E1EC9C01F0097674E /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		3DCF72901EC95A5400B008C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Music-Umbala/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		C76D921B1EC1FEBA00F354C2 /* Music-Umbala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music-Umbala.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C76D92251EC1FEBA00F354C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C76D92271EC1FEBA00F354C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		C76D922A1EC1FEBA00F354C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C76D922C1EC1FEBA00F354C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C76D92341EC1FED900F354C2 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		C76D92351EC1FED900F354C2 /* UIExtesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtesion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D6E6E1B1EC95F180033D045 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D6E6E1C1EC95F180033D045 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D6E6E1E1EC95F180033D045 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DCF72901EC95A5400B008C0 /* Assets.xcassets */,
+				3D6E6E1F1EC95F180033D045 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D6E6E1F1EC95F180033D045 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3D6E6E201EC95F180033D045 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D6E6E151EC95BE00033D045 /* LaunchScreen.storyboard */,
+				3D6E6E171EC95BE00033D045 /* Main.storyboard */,
+				3DA3131E1EC9C01F0097674E /* More.storyboard */,
+				3DA313171EC9BF640097674E /* Player.storyboard */,
+				3DA313151EC9BF1A0097674E /* Music.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D6E6E221EC960530033D045 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3D6E6E231EC960530033D045 /* StringExtension.swift */,
+				3D6E6E241EC960530033D045 /* UIExtesion.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		C76D92121EC1FEBA00F354C2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,55 +113,15 @@
 		C76D921D1EC1FEBA00F354C2 /* Music-Umbala */ = {
 			isa = PBXGroup;
 			children = (
-				C76D92321EC1FED900F354C2 /* Controllers */,
-				C76D92331EC1FED900F354C2 /* Helpers */,
-				C76D92361EC1FED900F354C2 /* Models */,
-				C76D92371EC1FED900F354C2 /* Resources */,
-				C76D92381EC1FED900F354C2 /* Views */,
+				3D6E6E221EC960530033D045 /* Helper */,
+				3D6E6E1B1EC95F180033D045 /* Controller */,
+				3D6E6E1C1EC95F180033D045 /* Model */,
+				3D6E6E1E1EC95F180033D045 /* Resources */,
+				3D6E6E201EC95F180033D045 /* View */,
 				C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */,
 				C76D922C1EC1FEBA00F354C2 /* Info.plist */,
 			);
 			path = "Music-Umbala";
-			sourceTree = "<group>";
-		};
-		C76D92321EC1FED900F354C2 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		C76D92331EC1FED900F354C2 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				C76D92341EC1FED900F354C2 /* StringExtension.swift */,
-				C76D92351EC1FED900F354C2 /* UIExtesion.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		C76D92361EC1FED900F354C2 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C76D92371EC1FED900F354C2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C76D92271EC1FEBA00F354C2 /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		C76D92381EC1FED900F354C2 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				C76D92241EC1FEBA00F354C2 /* Main.storyboard */,
-				C76D92291EC1FEBA00F354C2 /* LaunchScreen.storyboard */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +183,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76D922B1EC1FEBA00F354C2 /* LaunchScreen.storyboard in Resources */,
-				C76D92281EC1FEBA00F354C2 /* Assets.xcassets in Resources */,
-				C76D92261EC1FEBA00F354C2 /* Main.storyboard in Resources */,
+				3D6E6E1A1EC95BE00033D045 /* Main.storyboard in Resources */,
+				3DA3131F1EC9C01F0097674E /* More.storyboard in Resources */,
+				3DA313161EC9BF1A0097674E /* Music.storyboard in Resources */,
+				3DCF72911EC95A5400B008C0 /* Assets.xcassets in Resources */,
+				3D6E6E191EC95BE00033D045 /* LaunchScreen.storyboard in Resources */,
+				3DA313181EC9BF640097674E /* Player.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,32 +199,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76D92391EC1FED900F354C2 /* StringExtension.swift in Sources */,
-				C76D923A1EC1FED900F354C2 /* UIExtesion.swift in Sources */,
+				3D6E6E261EC960530033D045 /* UIExtesion.swift in Sources */,
 				C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */,
+				3D6E6E251EC960530033D045 /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C76D92241EC1FEBA00F354C2 /* Main.storyboard */ = {
+		3D6E6E151EC95BE00033D045 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C76D92251EC1FEBA00F354C2 /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		C76D92291EC1FEBA00F354C2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C76D922A1EC1FEBA00F354C2 /* Base */,
+				3D6E6E161EC95BE00033D045 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ..;
-			sourceTree = "<group>";
+			path = "Music-Umbala/Views";
+			sourceTree = SOURCE_ROOT;
+		};
+		3D6E6E171EC95BE00033D045 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6E6E181EC95BE00033D045 /* Base */,
+			);
+			name = Main.storyboard;
+			path = "Music-Umbala/Views";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -347,6 +367,7 @@
 				C76D92311EC1FEBA00F354C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
