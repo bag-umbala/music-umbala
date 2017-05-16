@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D05F7341ECA282E00D3CEA5 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05F7331ECA282E00D3CEA5 /* MusicViewController.swift */; };
 		3D6E6E191EC95BE00033D045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E6E151EC95BE00033D045 /* LaunchScreen.storyboard */; };
 		3D6E6E1A1EC95BE00033D045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E6E171EC95BE00033D045 /* Main.storyboard */; };
 		3D6E6E251EC960530033D045 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E6E231EC960530033D045 /* StringExtension.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D05F7331ECA282E00D3CEA5 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		3D6E6E161EC95BE00033D045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Music-Umbala/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		3D6E6E181EC95BE00033D045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Music-Umbala/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		3D6E6E231EC960530033D045 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		3D6E6E1B1EC95F180033D045 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3D05F7331ECA282E00D3CEA5 /* MusicViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D05F7341ECA282E00D3CEA5 /* MusicViewController.swift in Sources */,
 				3D6E6E261EC960530033D045 /* UIExtesion.swift in Sources */,
 				C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */,
 				3D6E6E251EC960530033D045 /* StringExtension.swift in Sources */,
