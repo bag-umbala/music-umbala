@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Player-->
+        <!--Songs-->
         <scene sceneID="bGR-0K-aSP">
             <objects>
-                <viewControllerPlaceholder storyboardName="Player" id="8Na-fP-qdg" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Songs" id="8Na-fP-qdg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="i4d-SA-rl5"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mg7-99-Gqx" userLabel="First Responder" sceneMemberID="firstResponder"/>

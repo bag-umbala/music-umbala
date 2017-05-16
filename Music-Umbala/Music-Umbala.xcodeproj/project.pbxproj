@@ -12,10 +12,16 @@
 		3D6E6E251EC960530033D045 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E6E231EC960530033D045 /* StringExtension.swift */; };
 		3D6E6E261EC960530033D045 /* UIExtesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E6E241EC960530033D045 /* UIExtesion.swift */; };
 		3DA313161EC9BF1A0097674E /* Music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA313151EC9BF1A0097674E /* Music.storyboard */; };
-		3DA313181EC9BF640097674E /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA313171EC9BF640097674E /* Player.storyboard */; };
+		3DA313181EC9BF640097674E /* Songs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA313171EC9BF640097674E /* Songs.storyboard */; };
 		3DA3131F1EC9C01F0097674E /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3131E1EC9C01F0097674E /* More.storyboard */; };
 		3DCF72911EC95A5400B008C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF72901EC95A5400B008C0 /* Assets.xcassets */; };
 		C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */; };
+		C78EEE0E1ECB370B00EBB868 /* Feeling-Good-Michael-Buble.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C78EEE091ECB370A00EBB868 /* Feeling-Good-Michael-Buble.mp3 */; };
+		C78EEE0F1ECB370B00EBB868 /* Flight-of-the-Silverbird-Two-Steps-From-Hell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C78EEE0A1ECB370A00EBB868 /* Flight-of-the-Silverbird-Two-Steps-From-Hell.mp3 */; };
+		C78EEE101ECB370B00EBB868 /* Girl On Fire - Alicia Keys.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C78EEE0B1ECB370A00EBB868 /* Girl On Fire - Alicia Keys.mp3 */; };
+		C78EEE111ECB370B00EBB868 /* Mo-Den-Vau.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C78EEE0C1ECB370A00EBB868 /* Mo-Den-Vau.mp3 */; };
+		C78EEE121ECB370B00EBB868 /* Thang-7-Cua-Anh-Em-Va-Co-Don-Khoi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C78EEE0D1ECB370A00EBB868 /* Thang-7-Cua-Anh-Em-Va-Co-Don-Khoi.mp3 */; };
+		C78EEE161ECB3A5800EBB868 /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78EEE151ECB3A5800EBB868 /* SongsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +30,18 @@
 		3D6E6E231EC960530033D045 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		3D6E6E241EC960530033D045 /* UIExtesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtesion.swift; sourceTree = "<group>"; };
 		3DA313151EC9BF1A0097674E /* Music.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Music.storyboard; sourceTree = "<group>"; };
-		3DA313171EC9BF640097674E /* Player.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
+		3DA313171EC9BF640097674E /* Songs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Songs.storyboard; sourceTree = "<group>"; };
 		3DA3131E1EC9C01F0097674E /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		3DCF72901EC95A5400B008C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Music-Umbala/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		C76D921B1EC1FEBA00F354C2 /* Music-Umbala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music-Umbala.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76D922C1EC1FEBA00F354C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C78EEE091ECB370A00EBB868 /* Feeling-Good-Michael-Buble.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Feeling-Good-Michael-Buble.mp3"; sourceTree = "<group>"; };
+		C78EEE0A1ECB370A00EBB868 /* Flight-of-the-Silverbird-Two-Steps-From-Hell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Flight-of-the-Silverbird-Two-Steps-From-Hell.mp3"; sourceTree = "<group>"; };
+		C78EEE0B1ECB370A00EBB868 /* Girl On Fire - Alicia Keys.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Girl On Fire - Alicia Keys.mp3"; sourceTree = "<group>"; };
+		C78EEE0C1ECB370A00EBB868 /* Mo-Den-Vau.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mo-Den-Vau.mp3"; sourceTree = "<group>"; };
+		C78EEE0D1ECB370A00EBB868 /* Thang-7-Cua-Anh-Em-Va-Co-Don-Khoi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Thang-7-Cua-Anh-Em-Va-Co-Don-Khoi.mp3"; sourceTree = "<group>"; };
+		C78EEE151ECB3A5800EBB868 /* SongsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +58,7 @@
 		3D6E6E1B1EC95F180033D045 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C78EEE151ECB3A5800EBB868 /* SongsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -60,6 +73,7 @@
 		3D6E6E1E1EC95F180033D045 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C78EEE081ECB370A00EBB868 /* Songs */,
 				3DCF72901EC95A5400B008C0 /* Assets.xcassets */,
 				3D6E6E1F1EC95F180033D045 /* Images */,
 			);
@@ -79,7 +93,7 @@
 				3D6E6E151EC95BE00033D045 /* LaunchScreen.storyboard */,
 				3D6E6E171EC95BE00033D045 /* Main.storyboard */,
 				3DA3131E1EC9C01F0097674E /* More.storyboard */,
-				3DA313171EC9BF640097674E /* Player.storyboard */,
+				3DA313171EC9BF640097674E /* Songs.storyboard */,
 				3DA313151EC9BF1A0097674E /* Music.storyboard */,
 			);
 			path = View;
@@ -124,6 +138,18 @@
 			path = "Music-Umbala";
 			sourceTree = "<group>";
 		};
+		C78EEE081ECB370A00EBB868 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				C78EEE091ECB370A00EBB868 /* Feeling-Good-Michael-Buble.mp3 */,
+				C78EEE0A1ECB370A00EBB868 /* Flight-of-the-Silverbird-Two-Steps-From-Hell.mp3 */,
+				C78EEE0B1ECB370A00EBB868 /* Girl On Fire - Alicia Keys.mp3 */,
+				C78EEE0C1ECB370A00EBB868 /* Mo-Den-Vau.mp3 */,
+				C78EEE0D1ECB370A00EBB868 /* Thang-7-Cua-Anh-Em-Va-Co-Don-Khoi.mp3 */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +182,7 @@
 				TargetAttributes = {
 					C76D921A1EC1FEBA00F354C2 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5VD8256R7H;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -184,11 +211,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6E6E1A1EC95BE00033D045 /* Main.storyboard in Resources */,
+				C78EEE121ECB370B00EBB868 /* Thang-7-Cua-Anh-Em-Va-Co-Don-Khoi.mp3 in Resources */,
+				C78EEE111ECB370B00EBB868 /* Mo-Den-Vau.mp3 in Resources */,
 				3DA3131F1EC9C01F0097674E /* More.storyboard in Resources */,
 				3DA313161EC9BF1A0097674E /* Music.storyboard in Resources */,
 				3DCF72911EC95A5400B008C0 /* Assets.xcassets in Resources */,
 				3D6E6E191EC95BE00033D045 /* LaunchScreen.storyboard in Resources */,
-				3DA313181EC9BF640097674E /* Player.storyboard in Resources */,
+				C78EEE0F1ECB370B00EBB868 /* Flight-of-the-Silverbird-Two-Steps-From-Hell.mp3 in Resources */,
+				3DA313181EC9BF640097674E /* Songs.storyboard in Resources */,
+				C78EEE0E1ECB370B00EBB868 /* Feeling-Good-Michael-Buble.mp3 in Resources */,
+				C78EEE101ECB370B00EBB868 /* Girl On Fire - Alicia Keys.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6E6E261EC960530033D045 /* UIExtesion.swift in Sources */,
+				C78EEE161ECB3A5800EBB868 /* SongsViewController.swift in Sources */,
 				C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */,
 				3D6E6E251EC960530033D045 /* StringExtension.swift in Sources */,
 			);
@@ -328,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5VD8256R7H;
 				INFOPLIST_FILE = "Music-Umbala/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "namvh.Music-Umbala";
@@ -340,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5VD8256R7H;
 				INFOPLIST_FILE = "Music-Umbala/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "namvh.Music-Umbala";
