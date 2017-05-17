@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,10 +27,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vcu-f9-DYt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="8iQ-Tb-ddv"/>
-                            <constraint firstItem="vcu-f9-DYt" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="F7C-Bx-8tS"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="vcu-f9-DYt" secondAttribute="bottom" id="p5X-Td-La2"/>
-                            <constraint firstAttribute="trailing" secondItem="vcu-f9-DYt" secondAttribute="trailing" id="xBK-7q-u9h"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="vcu-f9-DYt" secondAttribute="bottom" id="BuQ-tA-ZgN"/>
+                            <constraint firstItem="vcu-f9-DYt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="HzD-fX-1mF"/>
+                            <constraint firstAttribute="trailing" secondItem="vcu-f9-DYt" secondAttribute="trailing" id="JAD-F8-SIi"/>
+                            <constraint firstItem="vcu-f9-DYt" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="pkf-6g-92F"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen" width="1000" height="500"/>
+        <image name="LaunchScreen" width="520" height="520"/>
     </resources>
 </document>

@@ -241,7 +241,6 @@
                     </view>
                     <connections>
                         <outlet property="Volume" destination="N2a-cU-SjZ" id="RID-LH-Ia1"/>
-                        <outlet property="addPlaylist" destination="T1O-ix-Ko0" id="sEu-ex-Wcj"/>
                         <outlet property="nowPlayingLabel" destination="EHa-YV-qhu" id="deM-x0-TGn"/>
                         <outlet property="tableView" destination="bkf-1N-joY" id="ARv-VA-dTt"/>
                     </connections>
