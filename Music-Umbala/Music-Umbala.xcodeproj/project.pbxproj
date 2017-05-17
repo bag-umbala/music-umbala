@@ -8,27 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		3D05F7341ECA282E00D3CEA5 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05F7331ECA282E00D3CEA5 /* MusicViewController.swift */; };
+		3D18AEA21ECC6F3F002ECA85 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18AEA11ECC6F3F002ECA85 /* Music.swift */; };
 		3D6E6E191EC95BE00033D045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E6E151EC95BE00033D045 /* LaunchScreen.storyboard */; };
 		3D6E6E1A1EC95BE00033D045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E6E171EC95BE00033D045 /* Main.storyboard */; };
 		3D6E6E251EC960530033D045 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E6E231EC960530033D045 /* StringExtension.swift */; };
 		3D6E6E261EC960530033D045 /* UIExtesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E6E241EC960530033D045 /* UIExtesion.swift */; };
+		3D9D13801ECB5C460074DACD /* SongOfflineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D137F1ECB5C460074DACD /* SongOfflineTableViewCell.swift */; };
 		3DA313161EC9BF1A0097674E /* Music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA313151EC9BF1A0097674E /* Music.storyboard */; };
 		3DA313181EC9BF640097674E /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA313171EC9BF640097674E /* Player.storyboard */; };
 		3DA3131F1EC9C01F0097674E /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3131E1EC9C01F0097674E /* More.storyboard */; };
+		3DB3F7DF1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3F7DE1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift */; };
 		3DCF72911EC95A5400B008C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF72901EC95A5400B008C0 /* Assets.xcassets */; };
+		3DFB11221ECAFC0F009CB786 /* SongOfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB11211ECAFC0F009CB786 /* SongOfflineViewController.swift */; };
+		3DFB11251ECB0064009CB786 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFB11241ECB0064009CB786 /* MediaPlayer.framework */; };
 		C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D05F7331ECA282E00D3CEA5 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		3D18AEA11ECC6F3F002ECA85 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		3D6E6E161EC95BE00033D045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Music-Umbala/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		3D6E6E181EC95BE00033D045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Music-Umbala/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		3D6E6E231EC960530033D045 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		3D6E6E241EC960530033D045 /* UIExtesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtesion.swift; sourceTree = "<group>"; };
+		3D9D137F1ECB5C460074DACD /* SongOfflineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongOfflineTableViewCell.swift; sourceTree = "<group>"; };
 		3DA313151EC9BF1A0097674E /* Music.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Music.storyboard; sourceTree = "<group>"; };
 		3DA313171EC9BF640097674E /* Player.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
 		3DA3131E1EC9C01F0097674E /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		3DB3F7DE1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongOfflineTableViewControllerExtension.swift; sourceTree = "<group>"; };
 		3DCF72901EC95A5400B008C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Music-Umbala/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		3DFB11211ECAFC0F009CB786 /* SongOfflineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongOfflineViewController.swift; sourceTree = "<group>"; };
+		3DFB11241ECB0064009CB786 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C76D921B1EC1FEBA00F354C2 /* Music-Umbala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music-Umbala.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76D922C1EC1FEBA00F354C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DFB11251ECB0064009CB786 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				3D05F7331ECA282E00D3CEA5 /* MusicViewController.swift */,
+				3DFB11211ECAFC0F009CB786 /* SongOfflineViewController.swift */,
+				3D9D137F1ECB5C460074DACD /* SongOfflineTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -56,6 +69,7 @@
 		3D6E6E1C1EC95F180033D045 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3D18AEA11ECC6F3F002ECA85 /* Music.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,8 +107,17 @@
 			children = (
 				3D6E6E231EC960530033D045 /* StringExtension.swift */,
 				3D6E6E241EC960530033D045 /* UIExtesion.swift */,
+				3DB3F7DE1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		3DFB11231ECB0064009CB786 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DFB11241ECB0064009CB786 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C76D92121EC1FEBA00F354C2 = {
@@ -102,6 +125,7 @@
 			children = (
 				C76D921D1EC1FEBA00F354C2 /* Music-Umbala */,
 				C76D921C1EC1FEBA00F354C2 /* Products */,
+				3DFB11231ECB0064009CB786 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,10 +140,10 @@
 		C76D921D1EC1FEBA00F354C2 /* Music-Umbala */ = {
 			isa = PBXGroup;
 			children = (
-				3D6E6E221EC960530033D045 /* Helper */,
 				3D6E6E1B1EC95F180033D045 /* Controller */,
-				3D6E6E1C1EC95F180033D045 /* Model */,
+				3D6E6E221EC960530033D045 /* Helper */,
 				3D6E6E1E1EC95F180033D045 /* Resources */,
+				3D6E6E1C1EC95F180033D045 /* Model */,
 				3D6E6E201EC95F180033D045 /* View */,
 				C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */,
 				C76D922C1EC1FEBA00F354C2 /* Info.plist */,
@@ -159,6 +183,7 @@
 				TargetAttributes = {
 					C76D921A1EC1FEBA00F354C2 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -204,7 +229,11 @@
 			files = (
 				3D05F7341ECA282E00D3CEA5 /* MusicViewController.swift in Sources */,
 				3D6E6E261EC960530033D045 /* UIExtesion.swift in Sources */,
+				3DFB11221ECAFC0F009CB786 /* SongOfflineViewController.swift in Sources */,
 				C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */,
+				3D18AEA21ECC6F3F002ECA85 /* Music.swift in Sources */,
+				3D9D13801ECB5C460074DACD /* SongOfflineTableViewCell.swift in Sources */,
+				3DB3F7DF1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift in Sources */,
 				3D6E6E251EC960530033D045 /* StringExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

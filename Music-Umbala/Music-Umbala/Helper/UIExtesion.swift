@@ -10,7 +10,7 @@ import UIKit
 
 extension UIViewController {
     // Hiển thị thông báo đơn giản
-    func alert(title: String, message: String) {
+    func alert(_ title: String, message: String) {
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(okAction)
@@ -18,7 +18,7 @@ extension UIViewController {
     }
     
     // Hiện thông báo xong làm gì đó
-    func alert(title: String, message: String, handler: @escaping (UIAlertAction) -> Void ) {
+    func alert(_ title: String, message: String, handler: @escaping (UIAlertAction) -> Void ) {
         let okAction = UIAlertAction(title: "OK", style: .default, handler: handler)
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(okAction)
