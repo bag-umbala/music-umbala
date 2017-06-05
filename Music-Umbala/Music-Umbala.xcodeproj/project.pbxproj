@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3D05F7341ECA282E00D3CEA5 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05F7331ECA282E00D3CEA5 /* MusicViewController.swift */; };
 		3D18AEA21ECC6F3F002ECA85 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18AEA11ECC6F3F002ECA85 /* Music.swift */; };
+		3D22E05C1ECD5D9200ADD4A0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D22E05B1ECD5D9200ADD4A0 /* libsqlite3.tbd */; };
+		3D22E05F1ECD5E0900ADD4A0 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D22E05D1ECD5E0900ADD4A0 /* DB.swift */; };
 		3D6E6E191EC95BE00033D045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E6E151EC95BE00033D045 /* LaunchScreen.storyboard */; };
 		3D6E6E1A1EC95BE00033D045 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6E6E171EC95BE00033D045 /* Main.storyboard */; };
 		3D6E6E251EC960530033D045 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E6E231EC960530033D045 /* StringExtension.swift */; };
@@ -17,8 +19,19 @@
 		3DA313161EC9BF1A0097674E /* Music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA313151EC9BF1A0097674E /* Music.storyboard */; };
 		3DA313181EC9BF640097674E /* Songs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA313171EC9BF640097674E /* Songs.storyboard */; };
 		3DA3131F1EC9C01F0097674E /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3131E1EC9C01F0097674E /* More.storyboard */; };
+		3DB2D6F31ECDBA280005D1F9 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2D6F21ECDBA280005D1F9 /* Playlist.swift */; };
 		3DB3F7DF1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3F7DE1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift */; };
+		3DB75E381ED2F3000053BC90 /* AddPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB75E371ED2F3000053BC90 /* AddPlaylistViewController.swift */; };
+		3DB75E3A1ED2F4460053BC90 /* AddPlaylistViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB75E391ED2F4460053BC90 /* AddPlaylistViewControllerExtension.swift */; };
+		3DC3B2721ECE109900931302 /* PlaylistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3B2711ECE109900931302 /* PlaylistManager.swift */; };
+		3DC3B2741ECE225900931302 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3B2731ECE225900931302 /* PlaylistViewController.swift */; };
+		3DC3B2761ECE228100931302 /* PlaylistViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3B2751ECE228100931302 /* PlaylistViewControllerExtension.swift */; };
+		3DC3B2781ECE264C00931302 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3B2771ECE264C00931302 /* PlaylistTableViewCell.swift */; };
+		3DC711B81EE162DE0029CBDB /* PlaylistDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC711B71EE162DE0029CBDB /* PlaylistDetailTableViewController.swift */; };
+		3DC711BA1EE16AE60029CBDB /* PlaylistDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC711B91EE16AE60029CBDB /* PlaylistDetailTableViewCell.swift */; };
 		3DCF72911EC95A5400B008C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF72901EC95A5400B008C0 /* Assets.xcassets */; };
+		3DD2C18B1EE48642002A1739 /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C18A1EE48642002A1739 /* PlaylistDetailViewController.swift */; };
+		3DD2C18D1EE48B1A002A1739 /* MPMediaMyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C18C1EE48B1A002A1739 /* MPMediaMyExtension.swift */; };
 		3DFB11221ECAFC0F009CB786 /* SongOfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB11211ECAFC0F009CB786 /* SongOfflineViewController.swift */; };
 		3DFB11251ECB0064009CB786 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFB11241ECB0064009CB786 /* MediaPlayer.framework */; };
 		C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */; };
@@ -33,6 +46,9 @@
 /* Begin PBXFileReference section */
 		3D05F7331ECA282E00D3CEA5 /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		3D18AEA11ECC6F3F002ECA85 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		3D22E05B1ECD5D9200ADD4A0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3D22E05D1ECD5E0900ADD4A0 /* DB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		3D22E05E1ECD5E0900ADD4A0 /* Music-Umbala-Briding-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Music-Umbala-Briding-Header.h"; sourceTree = "<group>"; };
 		3D6E6E161EC95BE00033D045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Music-Umbala/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		3D6E6E181EC95BE00033D045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Music-Umbala/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		3D6E6E231EC960530033D045 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -41,8 +57,19 @@
 		3DA313151EC9BF1A0097674E /* Music.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Music.storyboard; sourceTree = "<group>"; };
 		3DA313171EC9BF640097674E /* Songs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Songs.storyboard; sourceTree = "<group>"; };
 		3DA3131E1EC9C01F0097674E /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		3DB2D6F21ECDBA280005D1F9 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		3DB3F7DE1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongOfflineTableViewControllerExtension.swift; sourceTree = "<group>"; };
+		3DB75E371ED2F3000053BC90 /* AddPlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaylistViewController.swift; sourceTree = "<group>"; };
+		3DB75E391ED2F4460053BC90 /* AddPlaylistViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaylistViewControllerExtension.swift; sourceTree = "<group>"; };
+		3DC3B2711ECE109900931302 /* PlaylistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistManager.swift; sourceTree = "<group>"; };
+		3DC3B2731ECE225900931302 /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		3DC3B2751ECE228100931302 /* PlaylistViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewControllerExtension.swift; sourceTree = "<group>"; };
+		3DC3B2771ECE264C00931302 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
+		3DC711B71EE162DE0029CBDB /* PlaylistDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailTableViewController.swift; sourceTree = "<group>"; };
+		3DC711B91EE16AE60029CBDB /* PlaylistDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailTableViewCell.swift; sourceTree = "<group>"; };
 		3DCF72901EC95A5400B008C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Music-Umbala/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		3DD2C18A1EE48642002A1739 /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
+		3DD2C18C1EE48B1A002A1739 /* MPMediaMyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPMediaMyExtension.swift; sourceTree = "<group>"; };
 		3DFB11211ECAFC0F009CB786 /* SongOfflineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongOfflineViewController.swift; sourceTree = "<group>"; };
 		3DFB11241ECB0064009CB786 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C76D921B1EC1FEBA00F354C2 /* Music-Umbala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music-Umbala.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D22E05C1ECD5D9200ADD4A0 /* libsqlite3.tbd in Frameworks */,
 				3DFB11251ECB0064009CB786 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +103,12 @@
 				3DFB11211ECAFC0F009CB786 /* SongOfflineViewController.swift */,
 				3D9D137F1ECB5C460074DACD /* SongOfflineTableViewCell.swift */,
 				C78EEE151ECB3A5800EBB868 /* SongsViewController.swift */,
+				3DC3B2731ECE225900931302 /* PlaylistViewController.swift */,
+				3DC3B2771ECE264C00931302 /* PlaylistTableViewCell.swift */,
+				3DB75E371ED2F3000053BC90 /* AddPlaylistViewController.swift */,
+				3DC711B71EE162DE0029CBDB /* PlaylistDetailTableViewController.swift */,
+				3DD2C18A1EE48642002A1739 /* PlaylistDetailViewController.swift */,
+				3DC711B91EE16AE60029CBDB /* PlaylistDetailTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -82,7 +116,11 @@
 		3D6E6E1C1EC95F180033D045 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3D22E05D1ECD5E0900ADD4A0 /* DB.swift */,
+				3D22E05E1ECD5E0900ADD4A0 /* Music-Umbala-Briding-Header.h */,
 				3D18AEA11ECC6F3F002ECA85 /* Music.swift */,
+				3DB2D6F21ECDBA280005D1F9 /* Playlist.swift */,
+				3DC3B2711ECE109900931302 /* PlaylistManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +160,9 @@
 				3D6E6E231EC960530033D045 /* StringExtension.swift */,
 				3D6E6E241EC960530033D045 /* UIExtesion.swift */,
 				3DB3F7DE1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift */,
+				3DC3B2751ECE228100931302 /* PlaylistViewControllerExtension.swift */,
+				3DB75E391ED2F4460053BC90 /* AddPlaylistViewControllerExtension.swift */,
+				3DD2C18C1EE48B1A002A1739 /* MPMediaMyExtension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -129,6 +170,7 @@
 		3DFB11231ECB0064009CB786 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D22E05B1ECD5D9200ADD4A0 /* libsqlite3.tbd */,
 				3DFB11241ECB0064009CB786 /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
@@ -209,8 +251,8 @@
 				TargetAttributes = {
 					C76D921A1EC1FEBA00F354C2 = {
 						CreatedOnToolsVersion = 8.3.2;
-						LastSwiftMigration = 0830;
 						DevelopmentTeam = 5VD8256R7H;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -261,13 +303,25 @@
 			files = (
 				3D05F7341ECA282E00D3CEA5 /* MusicViewController.swift in Sources */,
 				3D6E6E261EC960530033D045 /* UIExtesion.swift in Sources */,
+				3DC711B81EE162DE0029CBDB /* PlaylistDetailTableViewController.swift in Sources */,
 				3DFB11221ECAFC0F009CB786 /* SongOfflineViewController.swift in Sources */,
+				3D22E05F1ECD5E0900ADD4A0 /* DB.swift in Sources */,
+				3DB75E381ED2F3000053BC90 /* AddPlaylistViewController.swift in Sources */,
+				3DC3B2741ECE225900931302 /* PlaylistViewController.swift in Sources */,
+				3DC3B2781ECE264C00931302 /* PlaylistTableViewCell.swift in Sources */,
 				C78EEE161ECB3A5800EBB868 /* SongsViewController.swift in Sources */,
 				C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */,
 				3D18AEA21ECC6F3F002ECA85 /* Music.swift in Sources */,
+				3DC3B2761ECE228100931302 /* PlaylistViewControllerExtension.swift in Sources */,
 				3D9D13801ECB5C460074DACD /* SongOfflineTableViewCell.swift in Sources */,
+				3DD2C18B1EE48642002A1739 /* PlaylistDetailViewController.swift in Sources */,
+				3DC711BA1EE16AE60029CBDB /* PlaylistDetailTableViewCell.swift in Sources */,
+				3DD2C18D1EE48B1A002A1739 /* MPMediaMyExtension.swift in Sources */,
+				3DB2D6F31ECDBA280005D1F9 /* Playlist.swift in Sources */,
+				3DC3B2721ECE109900931302 /* PlaylistManager.swift in Sources */,
 				3DB3F7DF1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift in Sources */,
 				3D6E6E251EC960530033D045 /* StringExtension.swift in Sources */,
+				3DB75E3A1ED2F4460053BC90 /* AddPlaylistViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "namvh.Music-Umbala";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Music-Umbala/Model/Music-Umbala-Briding-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -412,6 +467,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "namvh.Music-Umbala";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Music-Umbala/Model/Music-Umbala-Briding-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

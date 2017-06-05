@@ -8,8 +8,7 @@
 
 import UIKit
 
-class MusicViewController: UIViewController {
-
+class MusicViewController: UIViewController, UISearchBarDelegate, UISearchResultsUpdating {
     // MARK: *** Data model
     
     // MARK: *** UI Elements
@@ -17,9 +16,12 @@ class MusicViewController: UIViewController {
     @IBOutlet weak var playlistView: UIView!
     @IBOutlet weak var songOfflineView: UIView!
     @IBOutlet weak var songOnlineView: UIView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    var searchController: UISearchController = UISearchController(searchResultsController: nil)
     
     // MARK: *** UI events
     @IBAction func indexChanged(_ sender: UISegmentedControl) {
+        searchBar.isHidden = true
         switch segmentedControl.selectedSegmentIndex
         {
         case 0:
@@ -39,15 +41,31 @@ class MusicViewController: UIViewController {
         }
     }
     
+    @IBAction func search(_ sender: UIBarButtonItem) {
+        print("search")
+        searchBar.isHidden = false
+    }
     // MARK: *** Local variables
     
     // MARK: *** UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+//        searchController.searchBar.scopeButtonTitles = ["title"]
+//        searchController.searchBar.delegate = self
+        searchBar.delegate = self
+        
+//        tableview?.tableHeaderView = searchBar
+        definesPresentationContext = true
+        
+        DB.createDBOrGetDBExist()
+        
         playlistView.isHidden = false
         songOfflineView.isHidden = true
         songOnlineView.isHidden = true
+        searchBar.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,14 +74,27 @@ class MusicViewController: UIViewController {
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
     }
-    */
-
+    
+    @available(iOS 8.0, *)
+    func updateSearchResults(for searchController: UISearchController) {
+        let selectedIndex = searchBar.selectedScopeButtonIndex
+        let searchString = searchBar.text ?? ""
+//        filterContentForSearchText(searchString, scope: selectedIndex)
+//        tableview?.reloadData()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        let selectedIndex = searchBar.selectedScopeButtonIndex
+        let searchString = searchBar.text ?? ""
+//        filterContentForSearchText(searchString, scope: selectedIndex)
+//        tableview?.reloadData()
+    }
 }

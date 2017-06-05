@@ -9,6 +9,7 @@
 import Foundation
 
 class Music {
+    var persistentID : UInt64
     var albumTitle : String
     var albumArtist : String
     var genre : String
@@ -17,7 +18,8 @@ class Music {
     var artwork : URL
     var assetURL : URL
     
-    init(title : String, artist : String, assetURL : URL, genre : String?) {
+    init(persistentID : UInt64, title : String, artist : String, assetURL : URL, genre : String?) {
+        self.persistentID = persistentID
         self.title = title
         self.artist = artist
         self.artwork = URL(fileURLWithPath: "")
@@ -27,7 +29,8 @@ class Music {
         self.albumArtist = ""
     }
     
-    init(title : String, artist : String, assetURL : URL, genre : String, artwork : URL) {
+    init(persistentID : UInt64, title : String, artist : String, assetURL : URL, genre : String, artwork : URL) {
+        self.persistentID = persistentID
         self.title = title
         self.artist = artist
         self.artwork = artwork
@@ -37,7 +40,8 @@ class Music {
         self.albumArtist = ""
     }
     
-    init(title : String, artist : String, assetURL : URL, genre : String, artwork : URL, albumTitle : String, albumArtist : String) {
+    init(persistentID : UInt64, title : String, artist : String, assetURL : URL, genre : String, artwork : URL, albumTitle : String, albumArtist : String) {
+        self.persistentID = persistentID
         self.title = title
         self.artist = artist
         self.artwork = artwork
