@@ -38,8 +38,7 @@ extension AddPlaylistViewController : UITableViewDelegate, UITableViewDataSource
                 {
                     playlistAdd.arrPersistentID.append((music?.persistentID)!)
                     
-                    let stringArray = playlistAdd.arrPersistentID.flatMap { String($0) }
-                    playlistAdd.strArrPersistentID = stringArray.joined(separator: ",")
+                    playlistAdd.processBeforeSave()
                     print(playlistAdd.strArrPersistentID)
                     if PlaylistManager.update(obj: playlistAdd) != nil {
                         self.dismiss(animated: true, completion: nil)

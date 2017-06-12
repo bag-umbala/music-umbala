@@ -54,13 +54,20 @@ extension PlaylistViewController : UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let collection = queryMedia(identifier: modelPlaylist[indexPath.row].arrPersistentID[0])
-//        if collection.count == 1 {
-//            print("\(collection.count)")
-//            // add event play music
-//        }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+////        let collection = queryMedia(identifier: modelPlaylist[indexPath.row].arrPersistentID[0])
+////        if collection.count == 1 {
+////            print("\(collection.count)")
+////            // add event play music
+////        }
+//        didSelectPlaylist = modelPlaylist?[indexPath.row]
+//        print("didSelectRowAt")
+//    }
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        print("willSelectRowAt")
         didSelectPlaylist = modelPlaylist?[indexPath.row]
+        return indexPath
     }
     
     func queryMedia(identifier : UInt64) -> MPMediaItemCollection {

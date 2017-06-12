@@ -44,6 +44,7 @@ class MusicViewController: UIViewController, UISearchBarDelegate, UISearchResult
     @IBAction func search(_ sender: UIBarButtonItem) {
         print("search")
         searchBar.isHidden = false
+        
     }
     // MARK: *** Local variables
     
@@ -51,10 +52,12 @@ class MusicViewController: UIViewController, UISearchBarDelegate, UISearchResult
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchController = UISearchController(searchResultsController: nil) //
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
 //        searchController.searchBar.scopeButtonTitles = ["title"]
-//        searchController.searchBar.delegate = self
+        searchController.searchBar.delegate = self //
+        searchController.hidesNavigationBarDuringPresentation = false //
         searchBar.delegate = self
         
 //        tableview?.tableHeaderView = searchBar

@@ -13,11 +13,28 @@ class PlaylistDetailViewController: UIViewController, UITableViewDelegate, UITab
     // MARK: *** Data model
     
     // MARK: *** UI Elements
+    @IBOutlet weak var editTable: UIBarButtonItem!
     
     // MARK: *** UI events
     @IBOutlet weak var tableView: UITableView!
     @IBAction func backPlaylist(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: true)
+    }
+    
+    @IBAction func toogleEditTableDetail(_ sender: UIBarButtonItem) {
+        if (self.tableView.isEditing)
+        {
+            sender.title = "Edit"
+            self.tableView.isEditing = false
+        } else {
+            sender.title = "Done"
+            self.tableView.isEditing = true
+        }
+        self.isEditing = true
     }
     
     // MARK: *** Local variables
@@ -38,8 +55,8 @@ class PlaylistDetailViewController: UIViewController, UITableViewDelegate, UITab
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-//        self.navigationController?.navigationBar.isHidden = false 
+//         self.navigationItem.rightBarButtonItem = self.editButtonItem
+//        self.navigationController?.navigationBar.isHidden = false
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -89,17 +106,24 @@ class PlaylistDetailViewController: UIViewController, UITableViewDelegate, UITab
     }
     */
 
-    /*
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            print("class: \(self.classForCoder) \(delete)")
+            modelMusic?.remove(at: indexPath.row)
+            
+            if (playlist != nil) {
+                playlist?.arrPersistentID.remove(at: indexPath.row)
+                playlist?.processBeforeSave()
+                PlaylistManager.update(obj: playlist!)
+            }
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
 
     /*
     // Override to support rearranging the table view.

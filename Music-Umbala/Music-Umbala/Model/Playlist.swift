@@ -41,4 +41,10 @@ class Playlist {
         self.arrPersistentID = arrPersistentID
         self.strArrPersistentID = ""
     }
+    
+    func processBeforeSave()
+    {
+        let stringArray = self.arrPersistentID.flatMap { String($0) }
+        strArrPersistentID = stringArray.joined(separator: ",")
+    }
 }

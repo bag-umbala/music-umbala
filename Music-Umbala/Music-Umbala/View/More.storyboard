@@ -1,33 +1,265 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IAV-s0-yoo">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IAV-s0-yoo">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--More-->
         <scene sceneID="eeF-F0-a1b">
             <objects>
-                <viewController id="IAV-s0-yoo" sceneMemberID="viewController">
+                <viewController id="IAV-s0-yoo" customClass="MoreViewController" customModule="Music_Umbala" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Eb6-uT-BNl"/>
                         <viewControllerLayoutGuide type="bottom" id="jC4-sz-sMp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jgl-FG-fB6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="it7-if-QSJ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="hdh-bG-RKk">
+                                        <nil key="title"/>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="hOt-0z-OEb">
+                                            <rect key="frame" x="63.5" y="7" width="193" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Nguồn Nhạc"/>
+                                                <segment title="Đa Ngôn Ngữ"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="indexChanged:" destination="IAV-s0-yoo" eventType="valueChanged" id="fLY-cg-7bt"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xxr-ro-LWF" userLabel="SourceMusic">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <connections>
+                                    <segue destination="HdN-KY-TY7" kind="embed" id="i5x-xh-BjQ"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6VG-k1-39R" userLabel="MultiLanguage">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <connections>
+                                    <segue destination="Eim-EA-oLA" kind="embed" id="GYx-QM-d3A"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6VG-k1-39R" firstAttribute="top" secondItem="it7-if-QSJ" secondAttribute="bottom" id="6qO-za-iGa"/>
+                            <constraint firstAttribute="trailing" secondItem="6VG-k1-39R" secondAttribute="trailing" id="ADr-g6-PYU"/>
+                            <constraint firstAttribute="trailing" secondItem="Xxr-ro-LWF" secondAttribute="trailing" id="UyT-Uh-FAV"/>
+                            <constraint firstItem="6VG-k1-39R" firstAttribute="trailing" secondItem="it7-if-QSJ" secondAttribute="trailing" id="Xpp-Rd-r9r"/>
+                            <constraint firstItem="Xxr-ro-LWF" firstAttribute="top" secondItem="it7-if-QSJ" secondAttribute="bottom" id="eIK-kI-iNM"/>
+                            <constraint firstItem="6VG-k1-39R" firstAttribute="leading" secondItem="it7-if-QSJ" secondAttribute="leading" id="eOK-ls-gIt"/>
+                            <constraint firstItem="Xxr-ro-LWF" firstAttribute="leading" secondItem="Jgl-FG-fB6" secondAttribute="leading" id="gcw-k4-CSD"/>
+                            <constraint firstItem="jC4-sz-sMp" firstAttribute="top" secondItem="Xxr-ro-LWF" secondAttribute="bottom" id="j1h-9D-j5g"/>
+                            <constraint firstItem="jC4-sz-sMp" firstAttribute="top" secondItem="6VG-k1-39R" secondAttribute="bottom" id="nLx-7W-c8A"/>
+                            <constraint firstItem="it7-if-QSJ" firstAttribute="top" secondItem="Eb6-uT-BNl" secondAttribute="bottom" id="oIg-Pz-nH8"/>
+                            <constraint firstItem="6VG-k1-39R" firstAttribute="leading" secondItem="Jgl-FG-fB6" secondAttribute="leading" id="oW5-7c-IrL"/>
+                            <constraint firstItem="it7-if-QSJ" firstAttribute="leading" secondItem="Xxr-ro-LWF" secondAttribute="leading" id="wWF-Ru-KAh"/>
+                            <constraint firstItem="it7-if-QSJ" firstAttribute="trailing" secondItem="Xxr-ro-LWF" secondAttribute="trailing" id="z0x-ND-2ah"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="More" image="More" id="3SZ-n5-yFd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="MultiLanguage" destination="6VG-k1-39R" id="Wjf-eL-HHf"/>
+                        <outlet property="SourceMusic" destination="Xxr-ro-LWF" id="EiJ-F1-ozh"/>
+                        <outlet property="segmentedControl" destination="hOt-0z-OEb" id="Uva-81-W21"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOk-DR-kHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-64" y="864"/>
+            <point key="canvasLocation" x="-64.799999999999997" y="863.1184407796103"/>
+        </scene>
+        <!--Source Music View Controller-->
+        <scene sceneID="BlQ-nI-QgD">
+            <objects>
+                <viewController id="HdN-KY-TY7" customClass="SourceMusicViewController" customModule="Music_Umbala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eN6-nm-f3w"/>
+                        <viewControllerLayoutGuide type="bottom" id="axo-G2-8Kg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AYd-e8-jt7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danh Sách Nguồn nhạc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1D-Is-V9z">
+                                <rect key="frame" x="16" y="34" width="213" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Otk-7j-4a7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aet-La-Dfl">
+                                <rect key="frame" x="0.0" y="75" width="320" height="334"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8e-Vj-bTa">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="288"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nhạc Của Tui" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXr-u8-ffm">
+                                                <rect key="frame" x="81" y="189" width="102" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zing mp3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkE-LN-TxH">
+                                                <rect key="frame" x="81" y="134" width="74" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keeng.vn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgX-aD-ZLe">
+                                                <rect key="frame" x="81" y="244" width="71" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chia sẻ nhạc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdO-8G-zQU">
+                                                <rect key="frame" x="81" y="79" width="99" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rbp-4e-Yim" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                <rect key="frame" x="20" y="238" width="32" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="otherCheckboxValueChanged:" destination="HdN-KY-TY7" eventType="valueChanged" id="hvO-Su-Hof"/>
+                                                </connections>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tất Cả" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhU-Kk-0Qi">
+                                                <rect key="frame" x="81" y="24" width="50" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SSM-hY-bly" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                <rect key="frame" x="20" y="18" width="32" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="allCheckboxValueChanged:" destination="HdN-KY-TY7" eventType="valueChanged" id="Ujg-l2-rgc"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DSY-Mz-jcf" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                <rect key="frame" x="20" y="128" width="32" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="otherCheckboxValueChanged:" destination="HdN-KY-TY7" eventType="valueChanged" id="cZ8-VV-2GL"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CCH-NQ-RHB" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                <rect key="frame" x="20" y="73" width="32" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="otherCheckboxValueChanged:" destination="HdN-KY-TY7" eventType="valueChanged" id="eTy-3k-wMf"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IYF-MO-0he" customClass="M13Checkbox" customModule="M13Checkbox">
+                                                <rect key="frame" x="20" y="183" width="32" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="otherCheckboxValueChanged:" destination="HdN-KY-TY7" eventType="valueChanged" id="l3M-dU-GbC"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="288" id="LWl-G1-OO2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="V8e-Vj-bTa" firstAttribute="top" secondItem="Aet-La-Dfl" secondAttribute="top" id="CgJ-kj-ouM"/>
+                                    <constraint firstAttribute="trailing" secondItem="V8e-Vj-bTa" secondAttribute="trailing" id="PaC-Nl-r7L"/>
+                                    <constraint firstAttribute="bottom" secondItem="V8e-Vj-bTa" secondAttribute="bottom" constant="54" id="mMn-W3-5wC"/>
+                                    <constraint firstItem="V8e-Vj-bTa" firstAttribute="leading" secondItem="Aet-La-Dfl" secondAttribute="leading" id="qN6-GJ-Ouf"/>
+                                    <constraint firstItem="V8e-Vj-bTa" firstAttribute="centerX" secondItem="Aet-La-Dfl" secondAttribute="centerX" id="uwK-Bc-Wo5"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNS-dg-lRK">
+                                <rect key="frame" x="120" y="417" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jlh-RO-aDb"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="Lưu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Save:" destination="HdN-KY-TY7" eventType="touchUpInside" id="bbm-2n-oXf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y1D-Is-V9z" firstAttribute="leading" secondItem="AYd-e8-jt7" secondAttribute="leadingMargin" id="AT6-zS-F9m"/>
+                            <constraint firstItem="Aet-La-Dfl" firstAttribute="top" secondItem="Y1D-Is-V9z" secondAttribute="bottom" constant="20" id="AZn-dZ-Ais"/>
+                            <constraint firstItem="axo-G2-8Kg" firstAttribute="top" secondItem="RNS-dg-lRK" secondAttribute="bottom" constant="8" id="FaO-8h-im5"/>
+                            <constraint firstItem="Y1D-Is-V9z" firstAttribute="top" secondItem="eN6-nm-f3w" secondAttribute="bottom" constant="34" id="PGu-rT-W3y"/>
+                            <constraint firstAttribute="trailing" secondItem="Aet-La-Dfl" secondAttribute="trailing" id="f9j-be-oRT"/>
+                            <constraint firstItem="RNS-dg-lRK" firstAttribute="top" secondItem="Aet-La-Dfl" secondAttribute="bottom" constant="8" id="lYv-bd-nx9"/>
+                            <constraint firstItem="RNS-dg-lRK" firstAttribute="centerX" secondItem="AYd-e8-jt7" secondAttribute="centerX" id="ndo-Yp-Hn9"/>
+                            <constraint firstItem="Aet-La-Dfl" firstAttribute="leading" secondItem="AYd-e8-jt7" secondAttribute="leading" id="ogC-aQ-7OX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allCheckbox" destination="SSM-hY-bly" id="4jP-nx-nnd"/>
+                        <outlet property="chiaSeNhacCheckbox" destination="CCH-NQ-RHB" id="kbk-hG-o5L"/>
+                        <outlet property="keengCheckbox" destination="Rbp-4e-Yim" id="aVd-p7-DCG"/>
+                        <outlet property="nhacCTCheckbox" destination="IYF-MO-0he" id="Hoq-od-WGi"/>
+                        <outlet property="zingMP3Checkbox" destination="DSY-Mz-jcf" id="eTQ-sV-In0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Wk-tP-2Ek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800.625" y="602.64084507042253"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zy7-oU-5R1">
+            <objects>
+                <viewController id="Eim-EA-oLA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ofS-ki-mhw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bmy-hd-QbT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2pz-7F-9bk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8jY-d5-RTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="1204"/>
         </scene>
     </scenes>
     <resources>

@@ -335,9 +335,14 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Detail" id="T1b-bg-jPl">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" style="done" id="XJP-bK-BQw">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="XJP-bK-BQw">
                                             <connections>
                                                 <action selector="backPlaylist:" destination="vpT-vU-xh8" id="Qai-O2-pbf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Edit" id="jSd-Ym-4y9">
+                                            <connections>
+                                                <action selector="toogleEditTableDetail:" destination="vpT-vU-xh8" id="dQv-JY-dB6"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -533,7 +538,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Thêm Vào Playlist" id="b9C-Ma-tDR">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="oil-iJ-sWb">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="oil-iJ-sWb">
                             <connections>
                                 <action selector="backAddPlaylist:" destination="ov6-op-PPh" id="kKO-0t-XOJ"/>
                             </connections>
@@ -577,7 +582,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Bzl-oS-Bch">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="frq-hE-bip" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="95U-1D-TLY" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KHz-RE-nRU">
@@ -589,6 +593,7 @@
                         <segue destination="ov6-op-PPh" kind="relationship" relationship="rootViewController" id="hKV-Kn-LXH"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="frq-hE-bip" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2445" y="20.598591549295776"/>
         </scene>
