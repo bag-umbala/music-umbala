@@ -26,6 +26,7 @@
 		3DB3F7DF1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB3F7DE1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift */; };
 		3DB75E381ED2F3000053BC90 /* AddPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB75E371ED2F3000053BC90 /* AddPlaylistViewController.swift */; };
 		3DB75E3A1ED2F4460053BC90 /* AddPlaylistViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB75E391ED2F4460053BC90 /* AddPlaylistViewControllerExtension.swift */; };
+		3DBA8A3B1EF1613800787279 /* DownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA8A3A1EF1613800787279 /* DownloadVC.swift */; };
 		3DC3B2721ECE109900931302 /* PlaylistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3B2711ECE109900931302 /* PlaylistManager.swift */; };
 		3DC3B2741ECE225900931302 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3B2731ECE225900931302 /* PlaylistViewController.swift */; };
 		3DC3B2761ECE228100931302 /* PlaylistViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3B2751ECE228100931302 /* PlaylistViewControllerExtension.swift */; };
@@ -35,6 +36,9 @@
 		3DCF72911EC95A5400B008C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCF72901EC95A5400B008C0 /* Assets.xcassets */; };
 		3DD2C18B1EE48642002A1739 /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C18A1EE48642002A1739 /* PlaylistDetailViewController.swift */; };
 		3DD2C18D1EE48B1A002A1739 /* MPMediaMyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C18C1EE48B1A002A1739 /* MPMediaMyExtension.swift */; };
+		3DD949441EF1B3FA00BA8115 /* NewPlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD949431EF1B3FA00BA8115 /* NewPlaylistVC.swift */; };
+		3DFAA7351EF04B6C00E5D9CC /* ListDownloadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAA7341EF04B6C00E5D9CC /* ListDownloadVC.swift */; };
+		3DFAA7371EF04D1C00E5D9CC /* ListDownLoadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFAA7361EF04D1C00E5D9CC /* ListDownLoadTableViewCell.swift */; };
 		3DFB11221ECAFC0F009CB786 /* SongOfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB11211ECAFC0F009CB786 /* SongOfflineViewController.swift */; };
 		3DFB11251ECB0064009CB786 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFB11241ECB0064009CB786 /* MediaPlayer.framework */; };
 		3E930118043FD28DF23946DC /* Pods_Music_Umbala.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572BD6518297197C82404DC5 /* Pods_Music_Umbala.framework */; };
@@ -69,6 +73,7 @@
 		3DB3F7DE1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongOfflineTableViewControllerExtension.swift; sourceTree = "<group>"; };
 		3DB75E371ED2F3000053BC90 /* AddPlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaylistViewController.swift; sourceTree = "<group>"; };
 		3DB75E391ED2F4460053BC90 /* AddPlaylistViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlaylistViewControllerExtension.swift; sourceTree = "<group>"; };
+		3DBA8A3A1EF1613800787279 /* DownloadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadVC.swift; sourceTree = "<group>"; };
 		3DC3B2711ECE109900931302 /* PlaylistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistManager.swift; sourceTree = "<group>"; };
 		3DC3B2731ECE225900931302 /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		3DC3B2751ECE228100931302 /* PlaylistViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -78,6 +83,9 @@
 		3DCF72901EC95A5400B008C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Music-Umbala/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		3DD2C18A1EE48642002A1739 /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
 		3DD2C18C1EE48B1A002A1739 /* MPMediaMyExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPMediaMyExtension.swift; sourceTree = "<group>"; };
+		3DD949431EF1B3FA00BA8115 /* NewPlaylistVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPlaylistVC.swift; sourceTree = "<group>"; };
+		3DFAA7341EF04B6C00E5D9CC /* ListDownloadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDownloadVC.swift; sourceTree = "<group>"; };
+		3DFAA7361EF04D1C00E5D9CC /* ListDownLoadTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDownLoadTableViewCell.swift; sourceTree = "<group>"; };
 		3DFB11211ECAFC0F009CB786 /* SongOfflineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongOfflineViewController.swift; sourceTree = "<group>"; };
 		3DFB11241ECB0064009CB786 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		572BD6518297197C82404DC5 /* Pods_Music_Umbala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Music_Umbala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +130,10 @@
 				3DC711B91EE16AE60029CBDB /* PlaylistDetailTableViewCell.swift */,
 				3D5391261EEDA25D006D88A4 /* SourceMusicViewController.swift */,
 				3D53912C1EEDB2E0006D88A4 /* MoreViewController.swift */,
+				3DFAA7341EF04B6C00E5D9CC /* ListDownloadVC.swift */,
+				3DFAA7361EF04D1C00E5D9CC /* ListDownLoadTableViewCell.swift */,
+				3DBA8A3A1EF1613800787279 /* DownloadVC.swift */,
+				3DD949431EF1B3FA00BA8115 /* NewPlaylistVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -384,15 +396,19 @@
 				3DFB11221ECAFC0F009CB786 /* SongOfflineViewController.swift in Sources */,
 				3D22E05F1ECD5E0900ADD4A0 /* DB.swift in Sources */,
 				3DB75E381ED2F3000053BC90 /* AddPlaylistViewController.swift in Sources */,
+				3DBA8A3B1EF1613800787279 /* DownloadVC.swift in Sources */,
 				3DC3B2741ECE225900931302 /* PlaylistViewController.swift in Sources */,
 				3DC3B2781ECE264C00931302 /* PlaylistTableViewCell.swift in Sources */,
 				C78EEE161ECB3A5800EBB868 /* SongsViewController.swift in Sources */,
+				3DD949441EF1B3FA00BA8115 /* NewPlaylistVC.swift in Sources */,
 				C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */,
 				3D18AEA21ECC6F3F002ECA85 /* Music.swift in Sources */,
 				3DC3B2761ECE228100931302 /* PlaylistViewControllerExtension.swift in Sources */,
+				3DFAA7371EF04D1C00E5D9CC /* ListDownLoadTableViewCell.swift in Sources */,
 				3D9D13801ECB5C460074DACD /* SongOfflineTableViewCell.swift in Sources */,
 				3DD2C18B1EE48642002A1739 /* PlaylistDetailViewController.swift in Sources */,
 				3DC711BA1EE16AE60029CBDB /* PlaylistDetailTableViewCell.swift in Sources */,
+				3DFAA7351EF04B6C00E5D9CC /* ListDownloadVC.swift in Sources */,
 				3DD2C18D1EE48B1A002A1739 /* MPMediaMyExtension.swift in Sources */,
 				3D5391271EEDA25D006D88A4 /* SourceMusicViewController.swift in Sources */,
 				3DB2D6F31ECDBA280005D1F9 /* Playlist.swift in Sources */,

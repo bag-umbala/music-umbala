@@ -54,6 +54,33 @@ class PlaylistManager {
         return lsS
     }
     
+    // Chèn một Name vào CSDl
+    static func insert(obj: Playlist) -> Bool {
+        // let formater = DateFormatter()
+        // formater.dateFormat = "dd/MM/yyyy";
+        // let strDateOfBirth = formater.string(from: dateOfBirth)
+        obj.processBeforeSave()
+        let insertQ = "INSERT INTO \(entityName)(name, arrPersistentID) values ('\(obj.name)', '\(obj.strArrPersistentID)');"
+        
+        var statement_handle : OpaquePointer?
+        if sqlite3_prepare_v2(DB.db, insertQ, -1, &statement_handle, nil) == SQLITE_OK {
+            if sqlite3_step(statement_handle) == SQLITE_DONE {
+                print("Model: Inserted to table \(entityName)")
+                
+                sqlite3_finalize(statement_handle)
+                return true
+            } else {
+                print("Model: Inserted to table \(entityName) Fail! when run step")
+                print(String(cString: sqlite3_errmsg(DB.db)))
+            }
+        } else {
+            print("Model: Inserted to table \(entityName) Fail!")
+            print(String(cString: sqlite3_errmsg(DB.db)))
+        }
+        sqlite3_finalize(statement_handle)
+        return false
+    }
+    
     static func update(obj: Playlist) -> Playlist? {
         
         let updateQ = "UPDATE \(entityName) SET arrPersistentID = '\(obj.strArrPersistentID)' WHERE id = \(obj.id);"

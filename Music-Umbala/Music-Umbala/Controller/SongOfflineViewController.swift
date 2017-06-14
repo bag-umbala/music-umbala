@@ -20,7 +20,7 @@ class SongOfflineViewController: UIViewController, UISearchBarDelegate, UISearch
     
     // MARK: *** UI Elements
     @IBOutlet weak var nowPlayingLabel: UILabel!
-    @IBOutlet weak var Volume: UISlider!
+//    @IBOutlet weak var Volume: UISlider
     var mediaPicker: MPMediaPickerController?
     var myMusicPlayer: MPMusicPlayerController?
     let masterVolumeSlider: MPVolumeView = MPVolumeView()
@@ -155,7 +155,7 @@ class SongOfflineViewController: UIViewController, UISearchBarDelegate, UISearch
         
         tableView?.tableHeaderView = searchController.searchBar
 //        tableView?.tableHeaderView = searchBar
-        definesPresentationContext = true
+//        definesPresentationContext = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -267,16 +267,16 @@ class SongOfflineViewController: UIViewController, UISearchBarDelegate, UISearch
     }
     
     
-    @IBAction func openItunesLibraryTapped(_ sender: AnyObject) {
-        
-//        displayMediaPickerAndPlayItem()
-    }
-    
-    @IBAction func sliderVolume(_ sender: AnyObject) {
-        if let view = masterVolumeSlider.subviews.first as? UISlider{
-            view.value = sender.value
-        }
-    }
+//    @IBAction func openItunesLibraryTapped(_ sender: AnyObject) {
+//        
+////        displayMediaPickerAndPlayItem()
+//    }
+//    
+//    @IBAction func sliderVolume(_ sender: AnyObject) {
+//        if let view = masterVolumeSlider.subviews.first as? UISlider{
+//            view.value = sender.value
+//        }
+//    }
     
     // MARK: Search
     func filterContentForSearchText(searchText: String, scope: Int) {
