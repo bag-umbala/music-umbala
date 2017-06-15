@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9pv-A4-QxB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9pv-A4-QxB">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -340,7 +340,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên Bài Hát" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEl-Br-I5d">
-                                                    <rect key="frame" x="18" y="0.0" width="87.5" height="21"/>
+                                                    <rect key="frame" x="18" y="0.0" width="88" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Ceg-xT-U4t"/>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="Nmb-yu-fVT"/>
@@ -350,7 +350,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ca Sĩ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59w-Wn-n5k">
-                                                    <rect key="frame" x="18" y="23" width="35.5" height="21"/>
+                                                    <rect key="frame" x="18" y="23" width="36" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="Kir-Gd-Slf"/>
                                                         <constraint firstAttribute="height" constant="21" id="a5X-qf-bQi"/>
@@ -360,7 +360,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvc-BL-GqW">
-                                                    <rect key="frame" x="260" y="11.5" width="20" height="22"/>
+                                                    <rect key="frame" x="260" y="11" width="20" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="nD9-Da-jC8"/>
                                                     </constraints>
@@ -611,7 +611,7 @@
                                 <rect key="frame" x="16" y="94" width="288" height="2"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên Bài Hát Download" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNR-7U-3A1">
-                                <rect key="frame" x="16" y="59" width="159.5" height="21"/>
+                                <rect key="frame" x="16" y="59" width="160" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ahl-xC-LXI"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="225" id="zjG-S0-JaW"/>
@@ -621,7 +621,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwV-xg-h7U">
-                                <rect key="frame" x="263.5" y="61" width="32.5" height="16"/>
+                                <rect key="frame" x="263" y="61" width="33" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="UrR-Vq-Dkh"/>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="lou-aJ-SWp"/>
@@ -670,10 +670,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="1006"/>
         </scene>
-        <!--View Controller-->
+        <!--Song Online View Controller-->
         <scene sceneID="T82-g2-IbX">
             <objects>
-                <viewController id="fkf-2s-pQJ" sceneMemberID="viewController">
+                <viewController id="fkf-2s-pQJ" customClass="SongOnlineViewController" customModule="Music_Umbala" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ybK-TN-z47"/>
                         <viewControllerLayoutGuide type="bottom" id="J78-3e-97O"/>
@@ -682,14 +682,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="417"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Third" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEO-7u-u7r">
-                                <rect key="frame" x="142" y="87" width="120" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3No-MK-mxG">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3No-MK-mxG">
                                 <rect key="frame" x="125" y="138" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Download"/>
@@ -697,9 +690,60 @@
                                     <segue destination="Dgr-nD-rB4" kind="show" id="lV6-xU-bVi"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xlt-Nw-pkI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="417"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongOnlineTableViewCell" rowHeight="44" id="xVx-sX-PRj" customClass="SongOnlineTableViewCell" customModule="Music_Umbala" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xVx-sX-PRj" id="0s1-HJ-qgI">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96g-7b-Zp8">
+                                                    <rect key="frame" x="16" y="0.0" width="288" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyx-R0-sWR">
+                                                    <rect key="frame" x="16" y="22" width="288" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Nyx-R0-sWR" firstAttribute="top" secondItem="96g-7b-Zp8" secondAttribute="bottom" constant="1" id="6dU-i1-4Kq"/>
+                                                <constraint firstItem="96g-7b-Zp8" firstAttribute="leading" secondItem="0s1-HJ-qgI" secondAttribute="leading" constant="16" id="M5l-w7-fCP"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nyx-R0-sWR" secondAttribute="trailing" constant="16" id="b57-97-GCc"/>
+                                                <constraint firstItem="Nyx-R0-sWR" firstAttribute="leading" secondItem="0s1-HJ-qgI" secondAttribute="leading" constant="16" id="bBR-f2-yh3"/>
+                                                <constraint firstAttribute="trailing" secondItem="96g-7b-Zp8" secondAttribute="trailing" constant="16" id="jGy-Iv-HjT"/>
+                                                <constraint firstAttribute="bottom" secondItem="Nyx-R0-sWR" secondAttribute="bottom" id="m4g-ye-S5i"/>
+                                                <constraint firstItem="96g-7b-Zp8" firstAttribute="top" secondItem="0s1-HJ-qgI" secondAttribute="top" id="pUA-Vx-tJ0"/>
+                                                <constraint firstItem="Nyx-R0-sWR" firstAttribute="top" secondItem="96g-7b-Zp8" secondAttribute="bottom" constant="1" id="qWG-JU-ddk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="artistLabel" destination="Nyx-R0-sWR" id="QVF-5j-ND4"/>
+                                            <outlet property="titleLabel" destination="96g-7b-Zp8" id="J6G-F6-4v6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xlt-Nw-pkI" firstAttribute="top" secondItem="ybK-TN-z47" secondAttribute="bottom" id="5Q5-Ba-oon"/>
+                            <constraint firstAttribute="trailing" secondItem="xlt-Nw-pkI" secondAttribute="trailing" id="6JD-M6-QWI"/>
+                            <constraint firstItem="xlt-Nw-pkI" firstAttribute="leading" secondItem="0Fz-Tp-SD5" secondAttribute="leading" id="kA0-KU-9cO"/>
+                            <constraint firstItem="J78-3e-97O" firstAttribute="top" secondItem="xlt-Nw-pkI" secondAttribute="bottom" id="vfe-aG-Yv6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="songsTableView" destination="xlt-Nw-pkI" id="5K0-Xd-W0m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qeN-Wo-dD3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -744,7 +788,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên Bài Hát Download" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vo2-dz-mpV">
-                                                    <rect key="frame" x="8" y="5" width="159.5" height="21"/>
+                                                    <rect key="frame" x="8" y="5" width="160" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="225" id="0EY-n3-5Pk"/>
                                                         <constraint firstAttribute="height" constant="21" id="Nfd-kK-VEM"/>
@@ -757,7 +801,7 @@
                                                     <rect key="frame" x="8" y="35" width="304" height="2"/>
                                                 </progressView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="of2-Gc-lgs">
-                                                    <rect key="frame" x="279.5" y="5" width="32.5" height="16"/>
+                                                    <rect key="frame" x="279" y="5" width="33" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="goS-jO-CJ0"/>
                                                     </constraints>

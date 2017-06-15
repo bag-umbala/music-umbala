@@ -79,8 +79,13 @@ extension SongOfflineViewController : UITableViewDelegate, UITableViewDataSource
         
         let collection = MPMediaMyExtension.queryMedia(identifier: (modelMusic?[indexPath.row].persistentID)!)
         if collection.count == 1 {
-            print("\(collection.count)")
-            // add event play music
+            let storyboard = UIStoryboard(name: "Player", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "Player") as! PlayerViewController
+            let data = collection.representativeItem
+            // let viewController = PlayerViewController(nibName: "PlayerViewController", bundle: nil)
+            NSLog(data.debugDescription)
+            viewController.data = data
+            self.present(viewController, animated: true, completion: nil)
         }
     }
     

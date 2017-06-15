@@ -42,6 +42,12 @@
 		3DFB11221ECAFC0F009CB786 /* SongOfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFB11211ECAFC0F009CB786 /* SongOfflineViewController.swift */; };
 		3DFB11251ECB0064009CB786 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFB11241ECB0064009CB786 /* MediaPlayer.framework */; };
 		3E930118043FD28DF23946DC /* Pods_Music_Umbala.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572BD6518297197C82404DC5 /* Pods_Music_Umbala.framework */; };
+		C75FBFD61EF2436300FA259B /* SongOnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FBFD51EF2436300FA259B /* SongOnlineViewController.swift */; };
+		C75FBFD81EF26CC400FA259B /* SongOnlineViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FBFD71EF26CC400FA259B /* SongOnlineViewControllerExtension.swift */; };
+		C75FBFDA1EF2714500FA259B /* SongOnlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FBFD91EF2714500FA259B /* SongOnlineTableViewCell.swift */; };
+		C75FBFDC1EF273CF00FA259B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FBFDB1EF273CF00FA259B /* Song.swift */; };
+		C75FBFE61EF2BBC900FA259B /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75FBFE51EF2BBC900FA259B /* Player.storyboard */; };
+		C75FBFE81EF2BCAD00FA259B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FBFE71EF2BCAD00FA259B /* PlayerViewController.swift */; };
 		C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */; };
 		C78EEE0E1ECB370B00EBB868 /* Feeling-Good-Michael-Buble.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C78EEE091ECB370A00EBB868 /* Feeling-Good-Michael-Buble.mp3 */; };
 		C78EEE0F1ECB370B00EBB868 /* Flight-of-the-Silverbird-Two-Steps-From-Hell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C78EEE0A1ECB370A00EBB868 /* Flight-of-the-Silverbird-Two-Steps-From-Hell.mp3 */; };
@@ -90,6 +96,12 @@
 		3DFB11241ECB0064009CB786 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		572BD6518297197C82404DC5 /* Pods_Music_Umbala.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Music_Umbala.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DABAC23CF0B0350E7862B98 /* Pods-Music-Umbala.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Music-Umbala.release.xcconfig"; path = "Pods/Target Support Files/Pods-Music-Umbala/Pods-Music-Umbala.release.xcconfig"; sourceTree = "<group>"; };
+		C75FBFD51EF2436300FA259B /* SongOnlineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongOnlineViewController.swift; sourceTree = "<group>"; };
+		C75FBFD71EF26CC400FA259B /* SongOnlineViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongOnlineViewControllerExtension.swift; sourceTree = "<group>"; };
+		C75FBFD91EF2714500FA259B /* SongOnlineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongOnlineTableViewCell.swift; sourceTree = "<group>"; };
+		C75FBFDB1EF273CF00FA259B /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		C75FBFE51EF2BBC900FA259B /* Player.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
+		C75FBFE71EF2BCAD00FA259B /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		C76D921B1EC1FEBA00F354C2 /* Music-Umbala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music-Umbala.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76D921E1EC1FEBA00F354C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76D922C1EC1FEBA00F354C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,6 +146,9 @@
 				3DFAA7361EF04D1C00E5D9CC /* ListDownLoadTableViewCell.swift */,
 				3DBA8A3A1EF1613800787279 /* DownloadVC.swift */,
 				3DD949431EF1B3FA00BA8115 /* NewPlaylistVC.swift */,
+				C75FBFD51EF2436300FA259B /* SongOnlineViewController.swift */,
+				C75FBFD91EF2714500FA259B /* SongOnlineTableViewCell.swift */,
+				C75FBFE71EF2BCAD00FA259B /* PlayerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -146,6 +161,7 @@
 				3D18AEA11ECC6F3F002ECA85 /* Music.swift */,
 				3DB2D6F21ECDBA280005D1F9 /* Playlist.swift */,
 				3DC3B2711ECE109900931302 /* PlaylistManager.swift */,
+				C75FBFDB1EF273CF00FA259B /* Song.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +191,7 @@
 				3DA3131E1EC9C01F0097674E /* More.storyboard */,
 				3DA313171EC9BF640097674E /* Songs.storyboard */,
 				3DA313151EC9BF1A0097674E /* Music.storyboard */,
+				C75FBFE51EF2BBC900FA259B /* Player.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,6 +206,7 @@
 				3DB75E391ED2F4460053BC90 /* AddPlaylistViewControllerExtension.swift */,
 				3DD2C18C1EE48B1A002A1739 /* MPMediaMyExtension.swift */,
 				3D5391241EED94A8006D88A4 /* SystemExtension.swift */,
+				C75FBFD71EF26CC400FA259B /* SongOnlineViewControllerExtension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -325,6 +343,7 @@
 				C78EEE111ECB370B00EBB868 /* Mo-Den-Vau.mp3 in Resources */,
 				3DA3131F1EC9C01F0097674E /* More.storyboard in Resources */,
 				3DA313161EC9BF1A0097674E /* Music.storyboard in Resources */,
+				C75FBFE61EF2BBC900FA259B /* Player.storyboard in Resources */,
 				3DCF72911EC95A5400B008C0 /* Assets.xcassets in Resources */,
 				3D6E6E191EC95BE00033D045 /* LaunchScreen.storyboard in Resources */,
 				C78EEE0F1ECB370B00EBB868 /* Flight-of-the-Silverbird-Two-Steps-From-Hell.mp3 in Resources */,
@@ -391,6 +410,7 @@
 			files = (
 				3D05F7341ECA282E00D3CEA5 /* MusicViewController.swift in Sources */,
 				3D6E6E261EC960530033D045 /* UIExtesion.swift in Sources */,
+				C75FBFD81EF26CC400FA259B /* SongOnlineViewControllerExtension.swift in Sources */,
 				3D5391251EED94A8006D88A4 /* SystemExtension.swift in Sources */,
 				3DC711B81EE162DE0029CBDB /* PlaylistDetailTableViewController.swift in Sources */,
 				3DFB11221ECAFC0F009CB786 /* SongOfflineViewController.swift in Sources */,
@@ -401,19 +421,23 @@
 				3DC3B2781ECE264C00931302 /* PlaylistTableViewCell.swift in Sources */,
 				C78EEE161ECB3A5800EBB868 /* SongsViewController.swift in Sources */,
 				3DD949441EF1B3FA00BA8115 /* NewPlaylistVC.swift in Sources */,
+				C75FBFDA1EF2714500FA259B /* SongOnlineTableViewCell.swift in Sources */,
 				C76D921F1EC1FEBA00F354C2 /* AppDelegate.swift in Sources */,
 				3D18AEA21ECC6F3F002ECA85 /* Music.swift in Sources */,
 				3DC3B2761ECE228100931302 /* PlaylistViewControllerExtension.swift in Sources */,
 				3DFAA7371EF04D1C00E5D9CC /* ListDownLoadTableViewCell.swift in Sources */,
 				3D9D13801ECB5C460074DACD /* SongOfflineTableViewCell.swift in Sources */,
 				3DD2C18B1EE48642002A1739 /* PlaylistDetailViewController.swift in Sources */,
+				C75FBFE81EF2BCAD00FA259B /* PlayerViewController.swift in Sources */,
 				3DC711BA1EE16AE60029CBDB /* PlaylistDetailTableViewCell.swift in Sources */,
+				C75FBFD61EF2436300FA259B /* SongOnlineViewController.swift in Sources */,
 				3DFAA7351EF04B6C00E5D9CC /* ListDownloadVC.swift in Sources */,
 				3DD2C18D1EE48B1A002A1739 /* MPMediaMyExtension.swift in Sources */,
 				3D5391271EEDA25D006D88A4 /* SourceMusicViewController.swift in Sources */,
 				3DB2D6F31ECDBA280005D1F9 /* Playlist.swift in Sources */,
 				3DC3B2721ECE109900931302 /* PlaylistManager.swift in Sources */,
 				3DB3F7DF1ECCBF4B009CA95B /* SongOfflineTableViewControllerExtension.swift in Sources */,
+				C75FBFDC1EF273CF00FA259B /* Song.swift in Sources */,
 				3D53912D1EEDB2E0006D88A4 /* MoreViewController.swift in Sources */,
 				3D6E6E251EC960530033D045 /* StringExtension.swift in Sources */,
 				3DB75E3A1ED2F4460053BC90 /* AddPlaylistViewControllerExtension.swift in Sources */,
