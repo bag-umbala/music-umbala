@@ -309,7 +309,7 @@
 				TargetAttributes = {
 					C76D921A1EC1FEBA00F354C2 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = JZ6H7HBWRD;
+						DevelopmentTeam = 5VD8256R7H;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -568,7 +568,7 @@
 			baseConfigurationReference = 37B62C8B7AB853D62B5B4A1A /* Pods-Music-Umbala.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JZ6H7HBWRD;
+				DEVELOPMENT_TEAM = 5VD8256R7H;
 				INFOPLIST_FILE = "Music-Umbala/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -584,7 +584,7 @@
 			baseConfigurationReference = 5DABAC23CF0B0350E7862B98 /* Pods-Music-Umbala.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JZ6H7HBWRD;
+				DEVELOPMENT_TEAM = 5VD8256R7H;
 				INFOPLIST_FILE = "Music-Umbala/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -23,8 +23,9 @@ class PlayerViewController: UIViewController {
     }
     
     // MARK: *** Local variables
-    var data: MPMediaItem!
-    
+    var data: MPMediaItemCollection!
+    var musicPlayer: MPMusicPlayerController!
+
     // MARK: *** UIViewController
 
     override func viewDidLoad() {
@@ -37,25 +38,15 @@ class PlayerViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     func getSong() {
-        self.titleLabel.text = self.data.title
-        self.artistLabel.text = self.data.artist
+        self.titleLabel.text = self.data.representativeItem?.title
+        self.artistLabel.text = self.data.representativeItem?.artist
         
-        let itemURL = data.value(forProperty: MPMediaItemPropertyAssetURL) as! URL
-        let audioItem = AVPlayerItem(url: itemURL)
-        let audioPlayer = AVPlayer(playerItem: audioItem)
-        audioPlayer.play()
+        musicPlayer = MPMusicPlayerController.applicationMusicPlayer()
+        musicPlayer.setQueue(with: self.data)
+        musicPlayer.repeatMode = MPMusicRepeatMode.all
+        musicPlayer.shuffleMode = MPMusicShuffleMode.songs
+        musicPlayer.play()
     }
 }

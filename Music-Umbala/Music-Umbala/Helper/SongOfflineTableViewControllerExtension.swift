@@ -81,7 +81,7 @@ extension SongOfflineViewController : UITableViewDelegate, UITableViewDataSource
         if collection.count == 1 {
             let storyboard = UIStoryboard(name: "Player", bundle: nil)
             let viewController = storyboard.instantiateViewController(withIdentifier: "Player") as! PlayerViewController
-            let data = collection.representativeItem
+            let data = collection
             // let viewController = PlayerViewController(nibName: "PlayerViewController", bundle: nil)
             NSLog(data.debugDescription)
             viewController.data = data
