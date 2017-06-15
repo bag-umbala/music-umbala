@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,7 +42,7 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldd-24-5Lj" userLabel="Playlist View">
-                                <rect key="frame" x="16" y="102" width="288" height="417"/>
+                                <rect key="frame" x="0.0" y="102" width="320" height="417"/>
                                 <connections>
                                     <segue destination="6ja-LQ-VNa" kind="embed" id="bJT-FX-tOY"/>
                                 </connections>
@@ -76,17 +75,17 @@
                             <constraint firstItem="H4K-Pq-m33" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="5If-aR-Q6x"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="5ar-w5-6IQ" secondAttribute="bottom" id="5J9-W8-LCA"/>
                             <constraint firstItem="5ar-w5-6IQ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="B34-CT-1gC"/>
+                            <constraint firstAttribute="trailing" secondItem="ldd-24-5Lj" secondAttribute="trailing" id="EeX-VV-TW1"/>
                             <constraint firstAttribute="trailing" secondItem="5ar-w5-6IQ" secondAttribute="trailing" id="LN4-hB-ojy"/>
                             <constraint firstAttribute="trailing" secondItem="H4K-Pq-m33" secondAttribute="trailing" id="MEE-eZ-lHv"/>
                             <constraint firstItem="H4K-Pq-m33" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="T46-7X-pfm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ldd-24-5Lj" secondAttribute="trailing" id="UIP-kR-ZF4"/>
-                            <constraint firstItem="ldd-24-5Lj" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="UJ6-jU-Bv7"/>
                             <constraint firstItem="fXl-vb-YCt" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="VJZ-1p-ZSD"/>
                             <constraint firstItem="fXl-vb-YCt" firstAttribute="top" secondItem="H4K-Pq-m33" secondAttribute="bottom" constant="5" id="aiK-MZ-UGB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fXl-vb-YCt" secondAttribute="trailing" id="bug-b8-yxQ"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ldd-24-5Lj" secondAttribute="bottom" id="dpx-bC-ph2"/>
                             <constraint firstAttribute="trailing" secondItem="ve5-TJ-euL" secondAttribute="trailing" id="epa-b3-Cod"/>
                             <constraint firstItem="5ar-w5-6IQ" firstAttribute="top" secondItem="fXl-vb-YCt" secondAttribute="bottom" constant="5" id="mhw-l7-9fh"/>
+                            <constraint firstItem="ldd-24-5Lj" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="pKe-jA-3SZ"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="ve5-TJ-euL" secondAttribute="bottom" id="pMd-3K-Xsc"/>
                             <constraint firstItem="ve5-TJ-euL" firstAttribute="top" secondItem="fXl-vb-YCt" secondAttribute="bottom" constant="5" id="u1G-Jz-39u"/>
                         </constraints>
@@ -124,18 +123,18 @@
                         <viewControllerLayoutGuide type="bottom" id="8k3-IU-CDh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="k59-2G-d97">
-                        <rect key="frame" x="0.0" y="0.0" width="288" height="417"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="417"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8pC-1H-66c">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="417"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="417"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaylistCell" id="0F2-z7-fH9" customClass="PlaylistTableViewCell" customModule="Music_Umbala" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="288" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0F2-z7-fH9" id="HCE-tv-hCx">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playlist" translatesAutoresizingMaskIntoConstraints="NO" id="BV1-j2-zpK">
@@ -145,7 +144,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên Playlist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-Xp-T6X">
-                                                    <rect key="frame" x="74" y="13" width="190" height="21"/>
+                                                    <rect key="frame" x="74" y="13" width="222" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -305,11 +304,11 @@
                         <viewControllerLayoutGuide type="bottom" id="odC-bv-kk0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YD7-3v-iYk">
-                        <rect key="frame" x="0.0" y="0.0" width="288" height="417"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="417"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJF-U9-tbO">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="S5P-gs-3Zs"/>
                                 </constraints>
@@ -329,7 +328,7 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QPE-Wn-L6c">
-                                <rect key="frame" x="0.0" y="44" width="288" height="373"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="373"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaylistDetailCell" id="ofd-nj-LZl" customClass="PlaylistDetailTableViewCell" customModule="Music_Umbala" customModuleProvider="target">
