@@ -309,7 +309,7 @@
 				TargetAttributes = {
 					C76D921A1EC1FEBA00F354C2 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 5VD8256R7H;
+						DevelopmentTeam = JZ6H7HBWRD;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -568,10 +568,11 @@
 			baseConfigurationReference = 37B62C8B7AB853D62B5B4A1A /* Pods-Music-Umbala.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5VD8256R7H;
+				DEVELOPMENT_TEAM = JZ6H7HBWRD;
 				INFOPLIST_FILE = "Music-Umbala/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "namvh.Music-Umbala";
+				PRODUCT_BUNDLE_IDENTIFIER = "namnguyen.Music-Umbala";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Music-Umbala/Model/Music-Umbala-Briding-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -583,10 +584,11 @@
 			baseConfigurationReference = 5DABAC23CF0B0350E7862B98 /* Pods-Music-Umbala.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5VD8256R7H;
+				DEVELOPMENT_TEAM = JZ6H7HBWRD;
 				INFOPLIST_FILE = "Music-Umbala/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "namvh.Music-Umbala";
+				PRODUCT_BUNDLE_IDENTIFIER = "namnguyen.Music-Umbala";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Music-Umbala/Model/Music-Umbala-Briding-Header.h";
 				SWIFT_VERSION = 3.0;

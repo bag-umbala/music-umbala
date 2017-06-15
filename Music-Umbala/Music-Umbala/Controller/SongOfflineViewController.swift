@@ -200,7 +200,11 @@ class SongOfflineViewController: UIViewController, UISearchBarDelegate, UISearch
             addPlaylistViewController.music = didSelectAddPlaylist
         default:
 //            fatalError("Unexpected Segue Identifier; \(segue.identifier)")
-            os_log("Default", log: OSLog.default, type: .debug)
+            if #available(iOS 10.0, *) {
+                os_log("Default", log: OSLog.default, type: .debug)
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
 
